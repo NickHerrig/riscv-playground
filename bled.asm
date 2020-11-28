@@ -33,13 +33,13 @@ gpio_init:
 
     # clear existing config
     addi t2, zero, 0b1111
-    slli t2, t2, 4 
+    slli t2, t2, 8 
     xori t2, t2, -1
     and t1, t1, t2
 
     # set new config settings
     addi t2, zero, GPIO_CTL_OUT_PUSH_PULL << 2 | GPIO_MODE_OUT_50MHZ
-    slli t2, t2, 4 
+    slli t2, t2, 8 
     or t1, t1, t2
 
     # store the GPIO config
