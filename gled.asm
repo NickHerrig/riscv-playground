@@ -1,4 +1,4 @@
-# Turn on the red LED on the Longan Nano
+# Turn on the green LED on the Longan Nano
 
 RCU_BASE_ADDR = 0x40021000
 RCU_APB2EN_OFFSET = 0x18
